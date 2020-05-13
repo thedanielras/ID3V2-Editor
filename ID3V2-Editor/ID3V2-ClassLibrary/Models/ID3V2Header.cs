@@ -14,7 +14,7 @@ namespace ID3V2_ClassLibrary
         public ID3V2Header(byte[] rawHeader)
         {
             if (rawHeader.Length != 10)
-                throw new InvalidId3V2HeaderException();
+                throw new InvalidID3V2HeaderException();
 
             byte[] rawIdentifier = rawHeader.Take(3).ToArray();
             byte rawMajorVersionByte = rawHeader.Skip(3).Take(1).ToArray()[0];
