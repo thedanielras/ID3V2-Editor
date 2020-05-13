@@ -5,4 +5,10 @@
     <RootNamespace>ID3V2_ClassLibrary</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
 </Project>
