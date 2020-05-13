@@ -6,4 +6,8 @@
     <RootNamespace>ID3V2_Editor_UI</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ID3V2-ClassLibrary\ID3V2-ClassLibrary.csproj" />
+  </ItemGroup>
+
 </Project>
