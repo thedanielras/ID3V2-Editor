@@ -1,14 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ID3V2_ClassLibrary</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
 
 </Project>
