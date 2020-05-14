@@ -12,7 +12,7 @@ namespace ID3V2_ClassLibrary
     {
         private Stream fileStream;
         private ID3V2Header header;
-        private List<ID3V2Frame> frames;
+        private List<ID3V2Frame> frames = new List<ID3V2Frame>();
 
         public ID3V2Editor(IFileManager fileManager)
         {
@@ -44,11 +44,10 @@ namespace ID3V2_ClassLibrary
 
             int rawFramesSize = header.Size;
             byte[] rawFrames = new byte[rawFramesSize];
-            long position = fileStream.Position;
             fileStream.Read(rawFrames, 0, rawFramesSize);
 
             int skipSize = 0;
-            while (true)
+            while (skipSize < rawFramesSize)
             {
                 byte[] currentFrameHeaderRaw = rawFrames.Skip(skipSize).Take(10).ToArray();
                 ID3V2FrameHeader currentFrameHeader = new ID3V2FrameHeader(currentFrameHeaderRaw);
