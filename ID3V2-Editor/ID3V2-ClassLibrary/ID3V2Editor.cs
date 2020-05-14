@@ -21,6 +21,14 @@ namespace ID3V2_ClassLibrary
             ReadFrames();
         }
 
+        public List<ID3V2Frame> Frames
+        {
+            get
+            {
+                return frames;
+            }
+        }
+
         private void ReadHeader()
         {
             byte[] rawHeader = new byte[10];
