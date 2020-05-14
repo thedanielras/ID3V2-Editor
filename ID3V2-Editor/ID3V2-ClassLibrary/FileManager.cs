@@ -17,7 +17,7 @@ namespace ID3V2_ClassLibrary
 
         private void Validate()
         {
-            if (File.Exists(path))
+            if (!File.Exists(path))
                 throw new InvalidFileException(path);
         }
 
