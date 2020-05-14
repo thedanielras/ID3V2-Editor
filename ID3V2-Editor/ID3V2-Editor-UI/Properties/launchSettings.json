@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ID3V2-Editor-UI": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\ras98\\Music\\test.mp3\""
+    }
+  }
+}
