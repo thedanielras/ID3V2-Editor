@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ID3V2_ClassLibrary.Models
 {
-    class ID3V2FrameHeader
+    public class ID3V2FrameHeader
     {
         private byte[] rawHeader;
 
@@ -25,7 +25,7 @@ namespace ID3V2_ClassLibrary.Models
             byte[] rawId = rawHeader.Take(4).ToArray();
             ID = Encoding.UTF8.GetString(rawHeader);
         }
-        
+
         private void SetSize()
         {
             byte[] rawSize = rawHeader.Skip(4).Take(4).Reverse().ToArray();

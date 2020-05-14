@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ID3V2_ClassLibrary
 {
-    class ID3V2Editor
+    public class ID3V2Editor
     {
         private Stream fileStream;
         private ID3V2Header header;

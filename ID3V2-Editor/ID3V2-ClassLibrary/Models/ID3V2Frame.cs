@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ID3V2_ClassLibrary.Models
 {
-    abstract class ID3V2Frame
+    public abstract class ID3V2Frame
     {
         protected byte[] rawFrame;
         protected ID3V2FrameHeader header;

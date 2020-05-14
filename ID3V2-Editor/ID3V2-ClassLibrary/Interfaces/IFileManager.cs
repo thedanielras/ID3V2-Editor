@@ -2,7 +2,7 @@
 
 namespace ID3V2_ClassLibrary
 {
-    interface IFileManager
+    public interface IFileManager
     {
         Stream Open();
     }
