@@ -7,8 +7,7 @@ namespace ID3V2_ClassLibrary.Models
 {
     public abstract class ID3V2Frame
     {
-        protected byte[] rawFrame;
-        protected ID3V2FrameHeader header;
+        protected byte[] rawFrame;      
 
         public ID3V2Frame(byte[] rawFrame)
         {
@@ -17,18 +16,20 @@ namespace ID3V2_ClassLibrary.Models
             SetHeader();
         }
 
+        public ID3V2FrameHeader Header { get; private set; }
+
         public bool isValid
         {
             get
             {
-                return (header.Size > 0);
+                return (Header.Size > 0);
             }
         }
 
         private void SetHeader()
         {
             byte[] rawHeader = rawFrame.Take(10).ToArray();
-            header = new ID3V2FrameHeader(rawHeader);
+            Header = new ID3V2FrameHeader(rawHeader);
         }
     }
 }

@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ID3V2_Editor_UI</RootNamespace>
+    <AssemblyName>id3v2</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
