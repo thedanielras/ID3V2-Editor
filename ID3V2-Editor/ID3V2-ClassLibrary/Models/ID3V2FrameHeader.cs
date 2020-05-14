@@ -23,7 +23,7 @@ namespace ID3V2_ClassLibrary.Models
         private void SetID()
         {
             byte[] rawId = rawHeader.Take(4).ToArray();
-            ID = Encoding.UTF8.GetString(rawHeader);
+            ID = Encoding.UTF8.GetString(rawId);
         }
 
         private void SetSize()
